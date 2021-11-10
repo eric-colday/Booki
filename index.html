@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/59b99d826f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <!-- Étape 3 : Intégrez le header du projet -->
+    <header class="margeGlobal">
+         <!-- Nav -->
+        <nav class="margeNav">
+            <div class="flexBetween flexColumnMobile">
+                <div class="flexCentre">
+                    <img src="images/Booki.png" 
+                    alt="Logo Boki" 
+                    class="tailleLogo">
+                </div>
+    
+                <!-- On ajoute une div qui englobe les deux liens hébergements et activités  -->
+                <div class="flexCentre margeLiens12">
+                    <div class="flexCentre tailleLien bordureNav active tailleLienMobile">
+                        <a href="#hebergements" class="decorationLien couleurLien">Hébergements</a>
+                    </div>
+                    <div class="flexCentre tailleLien bordureNav tailleLienMobile">
+                        <a href="#activites" class="decorationLien couleurLien">Activités</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Étape 4 : Ajoutez le formulaire de recherche -->
+        <div class="margeTexte">
+            <h1 class="textGras">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <div class="bordureRecherche flexBetween">
+            <form>
+                <div class="flexCentre tailleIcon fondGris"><i class="fas fa-map-marker-alt"></i></div>
+                <div><input 
+                class="paddingRecherche bordureNone texteFormulaire positionAbsolue flexCentre" 
+                type="search" placeholder="Marseille, France"/>
+                </div>
+                <button class="flexCentre boutonRecherche displayNoneDestop">
+                <!-- <i class="fas fa-search"></i> -->
+                   <span class="mobileNone">Rechercher</span>
+                   <span class="desktopNone"><i class="fas fa-search"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- Étape 5 : Ajout de la partie Filtres -->
+        <div class="conteneur margeFiltre mobileFiltreWrap">
+            <div class="margFiltreTitre">
+                <h3>Filtres</h3>
+            </div>
+             <!-- Rajouter 2 div flexAround pour separer en mobile  -->
+             <!-- Div1 -->
+             <div class="mobileFiltreWrap flexAround">
+                <div class="flexBetween filtreTexteIcons">
+                    <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
+                    <div class="filtreTexte flexCentre">Économique</div>
+                </div>
+                <div class="flexBetween filtreTexteIcons">
+                    <i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
+                    <div class="filtreTexte flexCentre">Familial</div>
+                </div>
+             </div>
+
+             <!-- Div2 -->
+             <div class="mobileFiltreWrap flexAround">
+                <div class="flexBetween filtreTexteIcons">
+                    <i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
+                    <div class="filtreTexte flexCentre">Romantique</div>
+                </div>
+                <div class="flexBetween filtreTexteIcons">
+                    <i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
+                    <div class="filtreTexte flexCentre">Animaux autorisées</div>
+                </div>
+            </div>
+        </div>
+        <div class="margeInfo">
+            <div class="bordureInfo flexCentre">
+                <i class="fas fa-info fa-xs couleurBleu"></i>
+            </div>
+            <p class="margeTexteInfo">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </header>
+
+    <!-- Étape 6 : Réalisez la “card” présente dans “Hébergements à Marseille” -->
+    <!-- Étape 7 : Réalisez la “card” présente dans “Les plus populaires” --> 
+    <!-- Étape 8 : Gérez l’affichage des conteneurs “Hébergements à Marseille” et “Les plus populaires” -->
+    <!-- Section hébergements et plus populaires  -->
+    <main class="margeGlobal">
+
+        <section id="hebergements" class="flexAround hauteurBlocs">
+            <!-- Hébergements à Marseille  -->
+            <div class="flexColumnAround tailleHebergements fondGris cardHebergements">
+            <h2>Hébergements à Marseille</h2>
+
+            <!-- Bloc 1  -->
+            <div class="card1 flexBetween">
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements1"
+                    srcset="./images/hebergements/1_xlarge/lacannebiere-xl.jpg 4x,
+                            ./images/hebergements/2_large/lacannebiere-l.jpg   3x,
+                            ./images/hebergements/3_medium/lacannebiere-m.jpg  2x,
+                            ./images/hebergements/4_small/lacannebiere-s.jpg   1x" 
+                    src="./images/hebergements/4_small/lacannebiere-s.jpg"
+                    alt="Photo de la Cannebière">
+                    <div class="cubeDetailsHebergements">
+                        <h3>Auberge La Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements2"
+                    srcset="./images/hebergements/1_xlarge/hotelduport-xl.jpg 4x,
+                            ./images/hebergements/2_large/hotelduport-l.jpg   3x,
+                            ./images/hebergements/3_medium/hotelduport-m.jpg  2x,
+                            ./images/hebergements/4_small/hotelduport-s.jpg   1x" 
+                    src="images/hebergements/4_small/hotelduport-s.jpg"
+                    alt="Photo de l'Hôtel du Port">
+
+                    <div class="cubeDetailsHebergements">
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52<strong>€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements3"
+                    srcset="./images/hebergements/1_xlarge/hotellesmouettes-xl.jpg 4x,
+                            ./images/hebergements/2_large/hotellesmouettes-l.jpg   3x,
+                            ./images/hebergements/3_medium/hotellesmouettes-m.jpg  2x,
+                            ./images/hebergements/4_small/hotellesmouettes-s.jpg   1x" 
+                    src="images/hebergements/4_small/hotellesmouettes-s.jpg"
+                    alt="Photo de l'Hôtel les mouettes">
+
+                    <div class="cubeDetailsHebergements">
+                        <h3>Hôtel les mouettes</h3>
+                        <p>Nuit à partir de 76<strong>€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+             <!-- Bloc 2  -->
+            <div class="card2 flexBetween">
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements4"
+                    srcset="./images/hebergements/1_xlarge/hoteldelamer-xl.jpg 4x,
+                            ./images/hebergements/2_large/hoteldelamer-l.jpg   3x,
+                            ./images/hebergements/3_medium/hoteldelamer-m.jpg  2x,
+                            ./images/hebergements/4_small/hoteldelamer-s.jpg   1x"  
+                    src="images/hebergements/4_small/hoteldelamer-s.jpg"
+                    alt="Photo de l'Hôtel de la mer">
+
+                    <div class="cubeDetailsHebergements">
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de 46<strong>€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements5"
+                    srcset="./images/hebergements/1_xlarge/aubergelepanier-xl.jpg 4x,
+                            ./images/hebergements/2_large/aubergelepanier-l.jpg   3x,
+                            ./images/hebergements/3_medium/aubergelepanier-m.jpg  2x,
+                            ./images/hebergements/4_small/aubergelepanier-s.jpg   1x"   
+                    src="images/hebergements/4_small/aubergelepanier-s.jpg"
+                    alt="Photo de l'Auberge le panier">
+                    <div class="cubeDetailsHebergements">
+                        <h3>Auberge le panier</h3>
+                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubeHebergements flexColumnCentre">
+                    <img class="imgHebergements6"
+                    srcset="./images/hebergements/1_xlarge/hotelchezamina-xl.jpg 4x,
+                            ./images/hebergements/2_large/hotelchezamina-l.jpg   3x,
+                            ./images/hebergements/3_medium/hotelchezamina-m.jpg  2x,
+                            ./images/hebergements/4_small/hotelchezamina-s.jpg   1x" 
+                    src="images/hebergements/4_small/hotelchezamina-s.jpg"
+                    alt="Photo de l'Hôtel chez Amina">
+
+                    <div class="cubeDetailsHebergements">
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de 96<strong>€</strong></p>
+                        <div>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="textGras">Afficher plus</p>
+            </div>
+   
+            <!-- Les plus populaires  -->
+            <div class="taillePopulaires cardPopulaires fondGris">
+               <div class="flexBetween">
+                   <h2 class="tabletteSizeTitrePop texteGras">Les plus populaires</h2>
+                   <div><i class="fas fa-chart-line"></i></div> 
+               </div>
+               <div class="flexColumnAround">
+                <div class="cardPopulaires12 flexCentre cubePopulaires">
+                    <img class="imgPopulaires1"
+                    srcset="./images/hebergements/1_xlarge/hotellesoleildumatin-xl.jpg 4x,
+                            ./images/hebergements/2_large/hotellesoleildumatin-l.jpg   3x,
+                            ./images/hebergements/3_medium/hotellesoleildumatin-m.jpg  2x,
+                            ./images/hebergements/4_small/hotellesoleildumatin-s.jpg   1x"  
+                    src="images/hebergements/4_small/hotellesoleildumatin-s.jpg" 
+                    alt="Photo de l'Hôtel Le soleil du matin">
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Hôtel Le soleil du matin </h3>
+                        <p>Nuit à partir de 128<strong>€</strong></p>
+                        <div class="margeStars">
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="cardPopulaires12 flexCentre cubePopulaires">
+                    <img class="imgPopulaires2"
+                    srcset="./images/hebergements/1_xlarge/aucoeurdeleauchambresdhotes-xl.jpg 4x,
+                            ./images/hebergements/2_large/aucoeurdeleauchambresdhotes-l.jpg   3x,
+                            ./images/hebergements/3_medium/aucoeurdeleauchambresdhotes-m.jpg  2x,
+                            ./images/hebergements/4_small/aucoeurdeleauchambresdhotes-s.jpg   1x" 
+                    src="images/hebergements/4_small/aucoeurdeleauchambresdhotes-s.jpg" 
+                    alt="Photo de l'hôtel Au coeur de l'eau Chambres d'hôtes">
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71 <strong>€</strong></p>
+                        <div class="margeStars">
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div> 
+                </div>
+                <div class="cardPopulaires12 flexCentre cubePopulaires">
+                    <img class="imgPopulaires3"
+                    srcset="./images/hebergements/1_xlarge/hotteltoutbleuetblanc-xl.jpg 4x,
+                            ./images/hebergements/2_large/hotteltoutbleuetblanc-l.jpg   3x,
+                            ./images/hebergements/3_medium/hotteltoutbleuetblanc-m.jpg  2x,
+                            ./images/hebergements/4_small/hotteltoutbleuetblanc-s.jpg   1x" 
+                    src="images/hebergements/4_small/hotteltoutbleuetblanc-s.jpg" 
+                    alt="Photo de l'Hôtel Tout bleu et Blanc">
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Hôtel Tout bleu et Blanc</h3>
+                        <p>Nuit à partir de 68<strong>€</strong></p>
+                        <div class="margeStars">
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurBleu"></i>
+                            <i class="fas fa-star couleurGris"></i>
+                        </div>
+                    </div> 
+                </div>
+               </div>
+            </div>
+        </section>
+        
+         
+        <!-- Étape 9 : Intégrez le conteneur “Activités à Marseille” -->
+         <!-- Activités à Marseille -->
+        <section id="activites" class="activites">
+            <h2 class="margeTexteActivites">Activités à Marseille</h2>
+            <div class="cardActivites flexBetween">
+                <div class="cubeActivites flexColumnCentre">
+                    <img class="imgActivites1"
+                    srcset="./images/activites/1_xlarge/vieuxport-xl.jpg 4x,
+                            ./images/activites/2_large/vieuxport-l.jpg   3x,
+                            ./images/activites/3_medium/vieuxport-m.jpg  2x,
+                            ./images/activites/4_small/vieuxport-s.jpg   1x"  
+                    src="images/activites/3_medium/vieuxport-m.jpg" 
+                    alt="Photo de Vieux Port">
+                    <div class="hauteurTitre titreActivites"><h3>Vieux Port</h3></div>
+                </div>
+
+                <div class="cardActivites2356 flexColumnBetween">
+                    <div class="cubeActivites2356 flexColumnCentre">
+                        <img class="imgActivites2"
+                        srcset="./images/activites/1_xlarge/fortdepomegues-xl.jpg 4x,
+                            ./images/activites/2_large/fortdepomegues-l.jpg   3x,
+                            ./images/activites/3_medium/fortdepomegues-m.jpg  2x,
+                            ./images/activites/4_small/fortdepomegues-s.jpg   1x" 
+                        src="images/activites/3_medium/fortdepomegues-m.jpg" 
+                        alt="Photo de Fort de Pomègues">
+                        <div class="hauteurTitre titreActivites"><h3>Fort de Pomègues</h3></div>
+                    </div>
+                
+                    <div class="cubeActivites2356 flexColumnCentre">
+                        <img class="imgActivites3" 
+                        srcset="./images/activites/1_xlarge/ilesdufrioul-xl.jpg 4x,
+                            ./images/activites/2_large/ilesdufrioul-l.jpg   3x,
+                            ./images/activites/3_medium/ilesdufrioul-m.jpg  2x,
+                            ./images/activites/4_small/ilesdufrioul-s.jpg   1x"
+                        src="images/activites/3_medium/ilesdufrioul-m.jpg" 
+                        alt="Photo de Îles du Fioul">
+                        <div class="hauteurTitre titreActivites"><h3>Îles du Fioul</h3></div>
+                    </div>
+                </div>
+                <div class="cubeActivites flexColumnCentre">
+                    <img class="imgActivites4" 
+                    srcset="./images/activites/1_xlarge/parcnationaldescalanques-xl.jpg 4x,
+                            ./images/activites/2_large/parcnationaldescalanques-l.jpg   3x,
+                            ./images/activites/3_medium/parcnationaldescalanques-m.jpg  2x,
+                            ./images/activites/4_small/parcnationaldescalanques-s.jpg   1x"
+                    src="images/activites/3_medium/parcnationaldescalanques-m.jpg" 
+                    alt="Photo du Parc National des Calanques">
+                    <div class="hauteurTitre titreActivites"><h3>Parc National des Calanques</h3></div>
+                </div>
+
+                <div class="cardActivites2356 flexColumnBetween">
+                    <div class="cubeActivites2356 flexColumnCentre">
+                        <img class="imgActivites5" 
+                        srcset="./images/activites/1_xlarge/notredamesdelagarde-xl.jpg 4x,
+                            ./images/activites/2_large/notredamesdelagarde-l.jpg   3x,
+                            ./images/activites/3_medium/notredamesdelagarde-m.jpg  2x,
+                            ./images/activites/4_small/notredamesdelagarde-s.jpg   1x"
+                        src="images/activites/3_medium/notredamesdelagarde-m.jpg" 
+                        alt="Florian Wehde">
+                        <div class="hauteurTitre titreActivites"><h3>Notre-Dame-de-la-Garde</h3></div>
+                    </div>
+                
+                    <div class="cubeActivites2356 flexColumnCentre">
+                        <img class="imgActivites6" 
+                        srcset="./images/activites/1_xlarge/parclongchamp-xl.jpg 4x,
+                            ./images/activites/2_large/parclongchamp-l.jpg   3x,
+                            ./images/activites/3_medium/parclongchamp-m.jpg  2x,
+                            ./images/activites/4_small/parclongchamp-s.jpg   1x"
+                        src="images/activites/3_medium/parclongchamp-m.jpg" 
+                        alt="Lena Paulin">
+                        <div class="hauteurTitre titreActivites"><h3>Port Longchamp</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fondGris margeGlobalFooter">
+        <div class="footer flexStart margeGlobal">
+            <div class="tailleBlocFooter">
+                <h3>A propos</h3>
+                <div class="divLiensFooter">
+                    <a href="#" class="decorationLien lienFooter">Fonctionnement du site</a>
+                </div>
+                <div class="divLiensFooter">
+                    <a href="#" class="decorationLien lienFooter">Conditions générales de vente</a>
+                </div>
+                <div><a href="#" class="decorationLien lienFooter">Données et confidentialité</a></div>
+            </div>
+            <div class="tailleBlocFooter">
+                <h3>Nos hébergements</h3>
+                <div class="divLiensFooter"> 
+                    <a href="#" class="decorationLien lienFooter">Charte qualité</a>
+                </div>
+                <div class="divLiensFooter">
+                    <a href="#" class="decorationLien lienFooter">Soumettre votre hôtel</a>
+                </div>
+            </div>
+            <div class="tailleBlocFooter margBlocFooter3">
+                <h3>Assistance</h3>
+                <div class="divLiensFooter">
+                    <a href="#" class="decorationLien lienFooter">Centre d'aide</a>
+                </div>
+                <div class="divLiensFooter"><a href="#" class="decorationLien lienFooter">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
