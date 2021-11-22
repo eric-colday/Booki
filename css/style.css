@@ -619,6 +619,10 @@ html body
         width: 100%;
     }
 
+    .margeHeb{
+        margin-bottom: 0px;
+    }
+
     .cardPopulaires{
         flex: none;
         width: 90%;
@@ -635,6 +639,11 @@ html body
         padding: 5%;
         background-color: white;
     }
+
+    .imgHebergements
+{
+    height: 150px;
+}
 
 
 }
@@ -655,6 +664,10 @@ html body
     }
 
     /* Hébergements et Populaires */
+
+    .margeHeb{
+        margin-bottom: 26px;
+    }
 
     .cardHebergements{
         height: auto;
