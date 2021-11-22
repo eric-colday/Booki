@@ -68,11 +68,6 @@ html body
     align-items: center;
 }
 
-.flexStart{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .flexAround{
     display: flex;
@@ -349,47 +344,7 @@ html body
     margin-bottom: 10px;
 }
 
-.imgHebergements1
-{
-    width: 100%;
-    height: 160px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.imgHebergements2
-{
-    width: 100%;
-    height: 160px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.imgHebergements3
-{
-    width: 100%;
-    height: 160px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.imgHebergements4
-{
-    width: 100%;
-    height: 160px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.imgHebergements5
-{
-    width: 100%;
-    height: 160px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
-
-.imgHebergements6
+.imgHebergements
 {
     width: 100%;
     height: 160px;
@@ -461,7 +416,7 @@ html body
     padding-top: 24px;
 }
 
-.imgPopulaires1
+.imgPopulaires
 {
     width: 40%;
     height: 200px;
@@ -469,21 +424,6 @@ html body
     object-fit: cover;
 }
 
-.imgPopulaires2
-{
-    width: 40%;
-    height: 200px;
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
-}
-
-.imgPopulaires3
-{
-    width: 40%;
-    height: 200px;
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
-}
 
 /* Étape 9 : Intégrez le conteneur “Activités à Marseille” */
 /* Activités */
@@ -552,7 +492,7 @@ html body
     width: 95%;
 }
 
-.imgActivites1
+.imgActivites
 {
     width: 100%;
     height: 530px;
@@ -569,30 +509,6 @@ html body
 }
 
 .imgActivites3
-{
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0 ;
-    object-fit: cover;
-}
-
-.imgActivites4
-{
-    width: 100%;
-    height: 530px;
-    border-radius: 15px 15px 0 0 ;
-    object-fit: cover;
-}
-
-.imgActivites5
-{
-    width: 100%;
-    height: 250px;
-    border-radius: 15px 15px 0 0 ;
-    object-fit: cover;
-}
-
-.imgActivites6
 {
     width: 100%;
     height: 150px;
@@ -725,7 +641,7 @@ html body
 
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 762px */
-@media screen and (max-width: 762px){
+@media screen and (max-width: 768px){
 
     /* Nav */
 
